@@ -1,0 +1,76 @@
+.tudo-container {
+    background-color: black;
+    width:40vw;
+    margin:5em auto;
+    border-radius: 10px;
+    padding:15px;
+    color:white;
+    
+
+
+}
+
+.header{
+    font-size: 2em;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+
+}
+
+.input{
+    font-size: 1em;
+    font-weight: bold;
+    color:black;
+    background-color: white;
+    border:1px;
+    border-radius: 1em;
+    padding:.5em;
+    margin :1em;
+    width:60%;
+
+}
+.add-task-btn{
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+.cross-icon {
+  color: #9d0e04;
+  font-size: 40px;
+  cursor: pointer;
+
+}
+
+.cross-icon:hover {
+  color: #f90505;
+}
+
+.task-text {
+  margin: 0 100px;
+}
+
+.task-container {
+    background-color: #333; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    word-wrap: break-word; 
+    flex: 1; /* Take up remaining space */
+    min-width: 0; /* Allow flex items to shrink */
+    margin: 10px;
+}
+
+.lists-tasks {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .task-container {
+        width: 100%; /* Set width to 100% on smaller screens */
+    }
+}

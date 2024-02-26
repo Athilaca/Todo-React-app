@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
+import TudoApp from './components/TudoApp';
 
 function App() {
   return (
     <div className="App">
-
+     <TudoApp/>
     </div>
   );
 }
