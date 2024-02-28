@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import AddTask from './AddTask';
 import ListTask from './ListTask';
 
-const TudoApp=()=> {
+const TodoApp=()=> {
     const [tasks,setTasks]=useState([
         
     ]);
@@ -18,6 +18,15 @@ const TudoApp=()=> {
         setTasks(newTask)
 
     }
+    const handleEdit = (index) => {
+    const newTitle = prompt("Enter new task title:", tasks[index].title);
+    if (newTitle !== null && newTitle.trim() !== "") {
+        const newTasks = [...tasks];
+        newTasks[index].title = newTitle;
+        setTasks(newTasks);
+    }
+};
+
 
   return (
     <>
@@ -29,7 +38,7 @@ const TudoApp=()=> {
     
     <div className='tasks'>
         {tasks.map((task,index)=>(
-    <ListTask task={task}  removeTask={removeTask} index={index}/>
+    <ListTask task={task}  removeTask={removeTask} index={index} handleEdit={handleEdit}/>
     ))}
     </div>
     </div>
@@ -37,4 +46,4 @@ const TudoApp=()=> {
   );
 }
 
-export default TudoApp;
+export default TodoApp;

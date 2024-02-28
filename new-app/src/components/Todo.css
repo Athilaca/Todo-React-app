@@ -48,6 +48,9 @@
 .cross-icon:hover {
   color: #f90505;
 }
+.edit-icon:hover{
+  color:darkgoldenrod;
+}
 
 .task-text {
   margin: 0 100px;
@@ -58,8 +61,8 @@
     padding: 5px 10px;
     border-radius: 5px;
     word-wrap: break-word; 
-    flex: 1; /* Take up remaining space */
-    min-width: 0; /* Allow flex items to shrink */
+    flex: 1;
+    min-width: 0; 
     margin: 10px;
 }
 

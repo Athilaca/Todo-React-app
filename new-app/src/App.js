@@ -1,11 +1,11 @@
 
 import './App.css';
-import TudoApp from './components/TudoApp';
+import TodoApp from './components/TodoApp';
 
 function App() {
   return (
     <div className="App">
-     <TudoApp/>
+     <TodoApp/>
     </div>
   );
 }

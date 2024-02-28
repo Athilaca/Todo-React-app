@@ -1,15 +1,14 @@
 import React,{useState} from 'react'
-import './Tudo.css'
+import './Todo.css'
 
 const AddTask=({addTask,tasks})=>{
     const[value,setValue]= useState("");
 
     const addItem =()=>{
 
-      if (tasks.length >= 3) {
-            alert("You can't add more than 5 tasks!");
+      if (!value.trim()) {
             return;
-      }
+        }
       addTask(value);
       setValue("")
     };
